@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <div class="relative z-40 hidden lg:hidden" role="dialog" aria-modal="true">
+        <div class="fixed left-12 right-6 bottom-0 top-0 bg-gray-600 bg-opacity-75"></div>
+
+        <div class="fixed left-12 right-6 bottom-0 top-0 z-40 flex">
+          <div class="relative flex w-full max-w-md flex-1 flex-col bg-black">
+            <div class="absolute top-0 right-0 -mr-12 pt-2">
+              <button type="button" class="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <span class="sr-only">Close sidebar</span>
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-0 flex-1 overflow-y-auto pt-5 pb-4">
+              <div class="flex flex-shrink-0 items-center px-4">
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300" alt="Your Company" />
+              </div>
+              <nav class="mt-5 space-y-1 px-2">
+                <!-- Current: "bg-indigo-800 text-white", Default: "text-white hover:bg-primary hover:bg-opacity-75" -->
+                <a href="#" class="group flex items-center rounded-md bg-indigo-800 px-2 py-2 text-base font-medium text-white">
+                  <svg class="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  Dashboard
+                </a>
+
+                <a href="#" class="hover:bg-primary group flex items-center rounded-md px-2 py-2 text-base font-medium text-white hover:bg-opacity-75">
+                  <svg class="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                  </svg>
+                  Team
+                </a>
+
+                <a href="#" class="hover:bg-primary group flex items-center rounded-md px-2 py-2 text-base font-medium text-white hover:bg-opacity-75">
+                  <svg class="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+                  </svg>
+                  Projects
+                </a>
+
+                <a href="#" class="hover:bg-primary group flex items-center rounded-md px-2 py-2 text-base font-medium text-white hover:bg-opacity-75">
+                  <svg class="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                  </svg>
+                  Calendar
+                </a>
+
+                <a href="#" class="hover:bg-primary group flex items-center rounded-md px-2 py-2 text-base font-medium text-white hover:bg-opacity-75">
+                  <svg class="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                  </svg>
+                  Documents
+                </a>
+
+                <a href="#" class="hover:bg-primary group flex items-center rounded-md px-2 py-2 text-base font-medium text-white hover:bg-opacity-75">
+                  <svg class="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                  </svg>
+                  Reports
+                </a>
+              </nav>
+            </div>
+            <div class="flex flex-shrink-0 border-t border-indigo-800 p-4">
+              <a href="#" class="group block flex-shrink-0">
+                <div class="flex items-center">
+                  <div>
+                    <img class="inline-block h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-base font-medium text-white">Tom Cook</p>
+                    <p class="text-sm font-medium text-indigo-200 group-hover:text-white">View profile</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="w-14 flex-shrink-0" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-80 lg:flex-col">
+        <div class="flex min-h-0 flex-1 flex-col bg-black">
+          <div class="mt-28 flex flex-1 flex-col overflow-y-auto pb-4">
+            <div class="flex flex-shrink-0 items-center justify-center px-4">
+              <img class="h-20 w-auto" src="../assets/logo_white.svg" alt="Your Company" />
+            </div>
+            <nav class="mt-10 mt-20 flex flex-col space-y-4 text-center">
+              <div class="flex items-center justify-center bg-gray-600/70 py-3">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
+                  <span class="text-center text-base font-normal tracking-wide group-hover:bg-red-500">Dashboard</span>
+                </a>
+              </div>
+              <div class="flex items-center justify-center py-3">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
+                  <span class="text-center text-base font-normal tracking-wide">Schedule</span>
+                </a>
+              </div>
+              <div class="flex items-center justify-center py-3">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
+                  <span class="text-center text-base font-normal tracking-wide">Contact</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="flex flex-shrink-0 border-t border-indigo-800 p-4">
+            <div class="flex w-full items-center justify-center">
+              <div class="flex items-center gap-4">
+                <div class="bg-primary flex h-6 w-6 items-center justify-center rounded-full p-1 ring-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                  </svg>
+                </div>
+                <span class="text-sm font-medium text-white"><a href="#">Logout</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col lg:pl-64">
+        <div class="sticky top-0 z-10 flex h-16 items-center justify-between bg-black px-6 lg:hidden">
+          <img class="h-8" src="../assets/logo_white.svg" alt="" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+        </div>
+        <main class="flex-1">
+          <div class="py-20 px-4 md:px-16">
+            <div class="mx-auto max-w-6xl sm:px-6 lg:px-8">
+              <!-- Your content -->
+
+              <!-- Steps -->
+              <div class="relative flex">
+                <nav aria-label="Progress" class="mx-auto">
+                  <ol role="list" class="flex items-center">
+                    <li class="relative hidden pr-16 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
+                      <!-- Completed Step -->
+                      <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
+                        <div class="bg-primary h-0.5 w-full"></div>
+                      </div>
+                      <a href="#" class="bg-primary relative flex h-10 w-10 items-center justify-center rounded-full sm:h-12 sm:w-12">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+                          <defs>
+                            <clipPath id="clip-path">
+                              <circle id="Ellipse_13" data-name="Ellipse 13" cx="25" cy="25" r="25" fill="#cfd643" />
+                            </clipPath>
+                          </defs>
+                          <g id="Mask_Group_2" data-name="Mask Group 2" clip-path="url(#clip-path)">
+                            <g id="Group_1085" data-name="Group 1085" transform="translate(-22.37 12.714)">
+                              <rect id="Rectangle_599" data-name="Rectangle 599" width="24.767" height="1.288" transform="translate(18.751 18.975)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                              <path id="Path_24040" data-name="Path 24040" d="M199.655,40.193c1.288,0,4.071-.161,5.346-1.475l-.921-.9c-1,1.031-3.929,1.127-4.966,1.069l-24.194-1.121a.81.81,0,0,1-.47-.187l-4.29-3.62-.831.986,4.29,3.62a2.114,2.114,0,0,0,1.243.49l24.187,1.121Z" transform="translate(-158.101 -30.964)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                              <path id="Path_24041" data-name="Path 24041" d="M485.725,160.187a5.707,5.707,0,1,0-4.023-1.672A5.695,5.695,0,0,0,485.725,160.187Zm0-10.1a4.412,4.412,0,1,1-3.114,1.292,4.406,4.406,0,0,1,3.114-1.292" transform="translate(-471.966 -135.653)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                              <path id="Path_24042" data-name="Path 24042" d="M510.119,182.222a3.33,3.33,0,1,0-2.355-.975,3.33,3.33,0,0,0,2.355.975m0-5.372a2.042,2.042,0,1,1-1.444.6,2.043,2.043,0,0,1,1.444-.6" transform="translate(-496.36 -160.053)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                              <path id="Path_24044" data-name="Path 24044" d="M92.335,160.187a5.7,5.7,0,1,0-4.025-1.67A5.7,5.7,0,0,0,92.335,160.187Zm0-10.1a4.405,4.405,0,1,1-3.116,1.29,4.406,4.406,0,0,1,3.116-1.29" transform="translate(-43.825 -135.653)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                              <path id="Path_24047" data-name="Path 24047" d="M652.257,104.243h2.828a1.411,1.411,0,0,0,1.411-1.411V99.612a1.411,1.411,0,0,0-1.411-1.411h-2.828Zm2.828-4.754a.129.129,0,0,1,.122.123v3.221a.129.129,0,0,1-.122.122h-1.54V99.489Z" transform="translate(-652.257 -89.526)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                              <path id="Path_24048" data-name="Path 24048" d="M5.52,20.263H8.74V18.975H5.52a4.232,4.232,0,0,1-4.232-4.232V8.378A1.121,1.121,0,0,1,2.241,7.27l3.865-.644,11.614-5.1a2.669,2.669,0,0,1,1.095-.238h10.39c.1,0,6.866-.258,11.511,3.3l.064.045,5.5,3.291,10.448,2.705a5.083,5.083,0,0,1,3.82,5.34,25.535,25.535,0,0,1-.393,2.834.213.213,0,0,1-.213.168H53.5v1.288h6.4A1.5,1.5,0,0,0,61.4,19.052a28.546,28.546,0,0,0,.438-2.944,6.384,6.384,0,0,0-4.767-6.693L46.694,6.7l-5.217-3.15C36.484-.279,29.469,0,29.173,0H18.815a3.976,3.976,0,0,0-1.61.342L5.642,5.415l-3.607.567A2.409,2.409,0,0,0,0,8.378v6.377a5.52,5.52,0,0,0,5.52,5.507Z" transform="translate(0.001 0)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                            </g>
+                          </g>
+                        </svg>
+
+                        <span class="absolute top-14 whitespace-nowrap text-xs font-medium sm:text-sm">Getting Started</span>
+                      </a>
+                    </li>
+
+                    <li class="relative hidden pr-20 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
+                      <!-- Completed Step -->
+                      <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
+                        <div class="h-0.5 w-full bg-primary"></div>
+                      </div>
+                      <a href="#" class="relative bg-primary flex h-10 w-10 items-center justify-center rounded-full ring-red-100 sm:h-12 sm:w-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22.697" height="22.698" viewBox="0 0 22.697 22.698">
+                          <path id="Path_24062" data-name="Path 24062" d="M21.077,0H1.622A1.622,1.622,0,0,0,0,1.621V21.076A1.622,1.622,0,0,0,1.622,22.7H21.077A1.622,1.622,0,0,0,22.7,21.076V1.621A1.622,1.622,0,0,0,21.077,0M17.766,2.622h0a2.176,2.176,0,1,1-1.539.637,2.177,2.177,0,0,1,1.539-.637Zm3.044,16.253h0a1.431,1.431,0,0,1-1.354,1.512H3.244a1.431,1.431,0,0,1-1.338-1.512v-.109a1.59,1.59,0,0,1,.519-1.2l4.053-3.546a1.216,1.216,0,0,1,1.621,0l1.358,1.192h0a1.216,1.216,0,0,0,1.621,0l4.381-3.842h0a1.216,1.216,0,0,1,1.621,0l3.177,2.788h0a1.59,1.59,0,0,1,.519,1.2Z" transform="translate(-0.001)" fill="#e6e6e6" />
+                        </svg>
+
+                        <span class="absolute top-14 whitespace-nowrap text-xs font-medium sm:text-sm">Photo Upload</span>
+                      </a>
+                    </li>
+
+                    <li class="relative hidden pr-20 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
+                      <!-- Current Step -->
+                      <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
+                        <div class="h-0.5 w-full bg-gray-200"></div>
+                      </div>
+                      <a href="#" class="relative flex h-10 w-10 items-center justify-center rounded-full border-2 bg-white sm:h-12 sm:w-12" aria-current="step">
+                        <!-- <span class="h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true"></span> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.856" height="25.38" viewBox="0 0 30.856 25.38">
+                          <g id="Group_1142" data-name="Group 1142" transform="translate(0.125 0.125)">
+                            <path id="Path_24064" data-name="Path 24064" d="M5.465,0A2.124,2.124,0,0,1,6.973.625L7.014.67a2.144,2.144,0,0,1,.484.816h3.291a2.132,2.132,0,0,1,3.541-.86l.041.045a2.144,2.144,0,0,1,.483.816h3.291a2.144,2.144,0,0,1,.525-.859,2.131,2.131,0,0,1,3.538.859h1.655a1.777,1.777,0,0,1,1.774,1.774v8.7a6.7,6.7,0,1,1-6.462,11.209l0,0a6.718,6.718,0,0,1-1.343-1.924H1.774A1.777,1.777,0,0,1,0,19.466V3.261A1.777,1.777,0,0,1,1.774,1.487H3.43A2.133,2.133,0,0,1,5.462,0Zm17.8,15.423a.649.649,0,1,1,1.3,0v2.358H25.78a.649.649,0,0,1,0,1.3H23.911a.649.649,0,0,1-.649-.649V15.423Zm1.617-2.308h0l-.009,0h-.007a5.46,5.46,0,0,0-.949-.083,5.406,5.406,0,0,0-5.06,7.3.588.588,0,0,1,.026.069,5.4,5.4,0,1,0,6-7.279Zm-.537-1.37V6.191H1.3V19.465a.48.48,0,0,0,.14.336.476.476,0,0,0,.336.14H17.382a6.7,6.7,0,0,1,6.526-8.209c.145,0,.289,0,.432.014ZM7.5,2.783a2.118,2.118,0,0,1-.524.859l-.044.04a2.136,2.136,0,0,1-3.5-.9H1.777a.482.482,0,0,0-.478.478V4.894H24.342V3.261a.482.482,0,0,0-.479-.478H22.208a2.128,2.128,0,0,1-.524.86l-.045.041a2.135,2.135,0,0,1-3.5-.9H14.853a2.136,2.136,0,0,1-4.066,0H7.5Zm13.269-1.24a.836.836,0,0,0-1.183,0,.826.826,0,0,0-.245.59v.011a.835.835,0,0,0,.245.581.823.823,0,0,0,.591.245.832.832,0,0,0,.565-.218l.025-.027a.837.837,0,0,0,.245-.582V2.132a.834.834,0,0,0-.245-.591Zm-7.355,0a.837.837,0,0,0-1.428.591v.011a.839.839,0,0,0,.245.582.823.823,0,0,0,.591.245.837.837,0,0,0,.837-.827V2.134a.833.833,0,0,0-.218-.565l-.027-.025Zm-7.355,0a.837.837,0,0,0-1.428.591v.011a.839.839,0,0,0,.245.582.823.823,0,0,0,.591.245.833.833,0,0,0,.565-.218l.026-.027A.835.835,0,0,0,6.3,2.146V2.135a.833.833,0,0,0-.218-.565l-.027-.025Z" transform="translate(0)" fill="#e6e6e6" stroke="#e6e6e6" stroke-width="0.25" />
+                          </g>
+                        </svg>
+                        <span class="absolute top-14 whitespace-nowrap text-xs font-medium sm:text-sm">Schedule</span>
+                      </a>
+                    </li>
+
+                    <li class="relative hidden md:block">
+                      <!-- Upcoming Step -->
+                      <div class="absolute left-12 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
+                        <div class="h-0.5 w-full bg-gray-200"></div>
+                      </div>
+                      <a href="#" class="group relative flex h-10 w-10 items-center justify-center rounded-full border-2 border-gray-300 bg-white hover:border-gray-400 sm:h-12 sm:w-12">
+                        <svg id="Group_284" data-name="Group 284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.931" height="17.198" viewBox="0 0 22.931 17.198">
+                          <defs>
+                            <clipPath id="clip-path">
+                              <rect id="Rectangle_365" data-name="Rectangle 365" width="22.931" height="17.198" fill="none" stroke="#e6e6e6" stroke-width="3" />
+                            </clipPath>
+                          </defs>
+                          <g id="Group_195" data-name="Group 195" clip-path="url(#clip-path)">
+                            <path id="Path_911" data-name="Path 911" d="M18.2,1,6.733,12.465,1,6.733" transform="translate(1.866 1.866)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                          </g>
+                        </svg>
+
+                        <span class="absolute top-14 whitespace-nowrap text-xs font-medium sm:text-sm">Confirmation</span>
+                      </a>
+                    </li>
+                  </ol>
+                </nav>
+              </div> 
+
+              <div class="mx-auto py-20 md:max-w-xl md:py-44">
+                <div class=" ">
+                  <h1 class="pb-6 text-center text-4xl font-semibold leading-snug ">Garage</h1>
+                   <div class="max-w-md mx-auto">
+                    <h1 class=" text-center font-semibold pb-3">
+                        Photo 5: Garage From Exterior
+                    </h1>
+                    <p class="text-black text-sm text-center pb-6 font-light">
+                        Please provide a photo of the interior of your garage taken from a distance, standing outside if possible, to give an overall view of your garage.
+                    </p>
+                   </div>
+                   
+                  <!--  -->
+
+                  <div class="max-w-md mx-auto">
+                    <div class="col-span-full"> 
+                        <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-6">
+                          <div class="text-center">
+                            <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
+                            </svg>
+                            <div class="mt-4 flex text-xs whitespace-nowrap text-sm leading-6 text-gray-600">
+                              <p>Drag and drop your files here or </p>
+                                <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                <span class="ml-1 underline"> choose file</span>
+                                <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                              </label> 
+                            </div> 
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
+                  
+                  <div class="max-w-md mx-auto mt-6">
+                    <label for="" class="text-lg">Uploaded Files</label>
+                    <div class="w-full py-2 min-h-[20px] ring-1 ring-gray-300 px-4 mt-4  ">
+                            <div class="w-full h-full  flex items-center justify-between">
+                                <div class="flex items-center gap-4">
+                                    <svg class="mx-auto h-12 w-8 text-gray-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
+                                      </svg>
+    
+                                      <div class="">
+                                        <p class="text-xs">Uploaded_Image_2.png</p>
+                                        <p class="text-xs">50 MB</p>
+                                      </div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <p class="text-[10px]">50%</p> -
+                                        <p class="text-[10px] font-light">7 sec left</p>
+                                    </div>
+                                    <div class="h-5 w-5 bg-gray-500 rounded-full flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-3 h-3">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                          </svg>
+                                          
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="w-full relative bg-gray-200 mt-2 h-1  rounded-full overflow-hidden py-0.5 ">
+                                <div class="h-full top-0 left-0 absolute w-2/4 bg-primary"></div>
+                            </div>
+                    </div>
+                  </div>
+
+                  <div class="flex pt-6 mt-8">
+                    <button class="border-primary text-primary hover:bg-primary mx-auto border-2 px-8 py-3 font-semibold transition-all duration-200 hover:text-white">SAVE & CONTINUE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
