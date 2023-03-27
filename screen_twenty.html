@@ -9,11 +9,14 @@
 
     <style>
       .datepicker-picker{
-          min-width: 100%;
+          min-width: 100%; 
       }
+      .w-64 {
+        width: 100% !important;
+}
       .days{
-          margin-left: auto;
-          margin-right: auto;
+           
+          width: 100%;
       }
     </style>
   </head>
@@ -25,7 +28,7 @@
         <div class="fixed left-12 right-6 bottom-0 top-0 z-40 flex">
           <div class="relative flex w-full max-w-md flex-1 flex-col bg-black">
             <div class="absolute top-0 right-0 -mr-12 pt-2">
-              <button type="button" class="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <button type="button" class="ml-1 flex h-8 w-8 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span class="sr-only">Close sidebar</span>
                 <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -162,7 +165,7 @@
                       <div class="max-w-md">
                         <div class="grid gap-4">
                           <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-lg border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                             </svg>
 
@@ -202,9 +205,39 @@
                       <div class="mt-16">
                         <h1 class="pb-5 text-lg font-semibold">Uploaded Files</h1>
                         <div class="w-full">
-                          <div class="flex w-full max-w-full gap-6 overflow-x-auto md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+                          <div class="flex container w-full max-w-full gap-6 overflow-x-auto  xl:grid   xl:grid-cols-2 2xl:grid-cols-3">
                             <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-sm border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                              </svg>
+
+                              <div class="flex flex-col items-start gap-4 px-4 py-4 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41.743" height="35.543" viewBox="0 0 41.743 35.543">
+                                  <g id="Group_1139" data-name="Group 1139" transform="translate(-621 -453.749)">
+                                    <path id="Path_24085" data-name="Path 24085" d="M41.247,11.126a2.319,2.319,0,0,0-1.831-.881h-2.9V6.628a2.241,2.241,0,0,0-2.233-2.241h-23.1V2.209A2.241,2.241,0,0,0,8.942,0H1.988A2.032,2.032,0,0,0,.01,2.232L.071,32.791a2.318,2.318,0,0,0,.394,1.854,2.319,2.319,0,0,0,1.862.9H34.193a2.317,2.317,0,0,0,2.225-1.731l5.246-20.677a2.271,2.271,0,0,0-.417-2.009ZM2.018,1.467H8.972a.773.773,0,0,1,.773.773V4.418A1.484,1.484,0,0,0,11.236,5.91h23.1a.772.772,0,0,1,.773.773v3.632l-26.634.093A2.318,2.318,0,0,0,6.19,12L1.554,27.715,1.5,2.217c0-.75.379-.75.518-.75ZM40.188,12.74,34.973,33.462a.772.772,0,0,1-.773.611H2.327a.773.773,0,0,1-.773-1.035l6.1-20.615a.811.811,0,0,1,.773-.58l30.992-.108a.811.811,0,0,1,.773,1Z" transform="translate(621 453.75)" fill="#005ead" />
+                                    <path id="Path_24086" data-name="Path 24086" d="M-815.292,995.581l-6.681,23.2,34.314.723,5.354-23.068Z" transform="translate(1444 -531)" fill="#005ead" />
+                                  </g>
+                                </svg>
+
+                                <div class="min-w-0 flex-1">
+                                  <a href="#" class="focus:outline-none">
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <p class="whitespace-nowrap text-xs font-normal">Service Meter</p>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="flex items-center justify-between bg-blue-50">
+                                <div class="block flex items-center gap-1 py-2 px-4">
+                                  <p class="text-primary whitespace-nowrap text-xs font-light">2 <span>Files</span></p>
+                                </div>
+
+                                <div class="block flex items-center gap-1 py-2 px-4">
+                                  <p class="text-primary whitespace-nowrap text-xs font-light">17 <span>MB</span></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-sm border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                               </svg>
 
@@ -234,7 +267,7 @@
                               </div>
                             </div>
                             <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-sm border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                               </svg>
 
@@ -264,7 +297,7 @@
                               </div>
                             </div>
                             <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-sm border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                               </svg>
 
@@ -294,37 +327,7 @@
                               </div>
                             </div>
                             <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-sm border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                              </svg>
-
-                              <div class="flex flex-col items-start gap-4 px-4 py-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="41.743" height="35.543" viewBox="0 0 41.743 35.543">
-                                  <g id="Group_1139" data-name="Group 1139" transform="translate(-621 -453.749)">
-                                    <path id="Path_24085" data-name="Path 24085" d="M41.247,11.126a2.319,2.319,0,0,0-1.831-.881h-2.9V6.628a2.241,2.241,0,0,0-2.233-2.241h-23.1V2.209A2.241,2.241,0,0,0,8.942,0H1.988A2.032,2.032,0,0,0,.01,2.232L.071,32.791a2.318,2.318,0,0,0,.394,1.854,2.319,2.319,0,0,0,1.862.9H34.193a2.317,2.317,0,0,0,2.225-1.731l5.246-20.677a2.271,2.271,0,0,0-.417-2.009ZM2.018,1.467H8.972a.773.773,0,0,1,.773.773V4.418A1.484,1.484,0,0,0,11.236,5.91h23.1a.772.772,0,0,1,.773.773v3.632l-26.634.093A2.318,2.318,0,0,0,6.19,12L1.554,27.715,1.5,2.217c0-.75.379-.75.518-.75ZM40.188,12.74,34.973,33.462a.772.772,0,0,1-.773.611H2.327a.773.773,0,0,1-.773-1.035l6.1-20.615a.811.811,0,0,1,.773-.58l30.992-.108a.811.811,0,0,1,.773,1Z" transform="translate(621 453.75)" fill="#005ead" />
-                                    <path id="Path_24086" data-name="Path 24086" d="M-815.292,995.581l-6.681,23.2,34.314.723,5.354-23.068Z" transform="translate(1444 -531)" fill="#005ead" />
-                                  </g>
-                                </svg>
-
-                                <div class="min-w-0 flex-1">
-                                  <a href="#" class="focus:outline-none">
-                                    <span class="absolute inset-0" aria-hidden="true"></span>
-                                    <p class="whitespace-nowrap text-xs font-normal">Service Meter</p>
-                                  </a>
-                                </div>
-                              </div>
-                              <div class="flex items-center justify-between bg-blue-50">
-                                <div class="block flex items-center gap-1 py-2 px-4">
-                                  <p class="text-primary whitespace-nowrap text-xs font-light">2 <span>Files</span></p>
-                                </div>
-
-                                <div class="block flex items-center gap-1 py-2 px-4">
-                                  <p class="text-primary whitespace-nowrap text-xs font-light">17 <span>MB</span></p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-sm border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                               </svg>
 
@@ -374,7 +377,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                   </svg>
                                 </div>
-                                <a onclick="toggleModal()" class="text-primary border-primary border-b text-xs font-light" href="#">Send a message</a>
+                                <a onclick="toggleModalHelp()" class="  text-xs font-light" href="#">Send a message</a>
                               </div>
                             </div>
                           </div>
@@ -400,12 +403,11 @@
                       </div>
 
                       <!--  -->
-                      <div class="mt-16">
-                        <h1 class="pb-5 text-lg font-semibold">Uploaded Files</h1>
+                      <div class="mt-8"> 
                         <div class="max-w-md">
                           <div class="grid gap-4">
                             <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-lg border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                               </svg>
 
@@ -441,10 +443,10 @@
                           </div>
                         </div>
 
-                        <div class="mt-16 max-w-md">
+                        <div class="mt-8 max-w-md">
                           <div class="grid gap-4">
                             <div class="focus-within:ring-primary relative flex flex-col gap-4 rounded-lg border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-offset-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-0 h-5 w-5 text-gray-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                               </svg>
 
@@ -485,7 +487,7 @@
     <div id="modal" class="fixed inset-0 z-10 hidden overflow-y-auto">
       <div class="flex h-full min-h-full items-start justify-center text-left sm:items-center sm:p-0 md:text-center lg:items-center">
         <div class="relative w-full transform overflow-hidden rounded-sm bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:max-w-lg sm:p-6">
-          <div class="absolute top-6 right-6 cursor-pointer" onclick="toggleModal()">
+          <div class="absolute top-6 right-6 cursor-pointer" onclick="toggleModalHelp()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -509,17 +511,17 @@
 
             <div>
               <div class="mt-2">
-                <input id="text" placeholder="Your Number" name="password" type="password" autocomplete="current-password" required class="focus:ring-primary block w-full rounded-sm border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                <input id="text" placeholder="Your Number" name="number" type="number" autocomplete="current-password" required class="focus:ring-primary block w-full rounded-sm border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
               </div>
             </div>
             <div>
               <div class="mt-2">
-                <input id="email" placeholder="Email Address" name="password" type="password" autocomplete="current-password" required class="focus:ring-primary block w-full rounded-sm border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                <input id="email" placeholder="Email Address" name="password" type="email" autocomplete="current-password" required class="focus:ring-primary block w-full rounded-sm border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
               </div>
             </div>
             <div>
               <div class="mt-2">
-                <input id="text" placeholder="Message" name="password" type="password" autocomplete="current-password" required class="focus:ring-primary block w-full rounded-sm border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                <input id="text" placeholder="Message" name="password" type="text" autocomplete="current-password" required class="focus:ring-primary block w-full rounded-sm border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
               </div>
             </div>
 
@@ -537,7 +539,7 @@
 
 
 
-      function toggleModal(){
+      function toggleModalHelp(){
           const modal = document.getElementById('modal');
           const overlay = document.getElementById('overlay');
 
