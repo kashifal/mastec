@@ -1855,6 +1855,11 @@ select{
   line-height: 2.25rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -2453,6 +2458,16 @@ select{
   .md\:py-60{
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .md\:py-48{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .md\:py-40{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .md\:pr-32{
