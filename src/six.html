@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
-<style>
-    .datepicker-picker{
-        width: 100%;
-    } 
-    .days{
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
   </head>
   <body>
     <div>
@@ -21,7 +11,7 @@
         <div class="fixed left-12 right-6 bottom-0 top-0 bg-gray-600 bg-opacity-75"></div>
 
         <div class="fixed left-12 right-6 bottom-0 top-0 z-40 flex">
-          <div class="relative flex w-full max-w-md flex-1 flex-col bg-black">
+          <div class="relative flex w-full max-w-xs flex-1 flex-col bg-black">
             <div class="absolute top-0 right-0 -mr-12 pt-2">
               <button type="button" class="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span class="sr-only">Close sidebar</span>
@@ -80,7 +70,7 @@
                 </a>
               </nav>
             </div>
-            <div class="flex flex-shrink-0 border-t border-indigo-800 p-4">
+            <div class="flex flex-shrink-0   p-4">
               <a href="#" class="group block flex-shrink-0">
                 <div class="flex items-center">
                   <div>
@@ -104,28 +94,28 @@
             <div class="flex flex-shrink-0 items-center justify-center px-4">
               <img class="h-20 w-auto" src="../assets/logo_white.svg" alt="Your Company" />
             </div>
-            <nav class="mt-10 mt-20 flex flex-col space-y-4 text-center">
+            <nav class="mt-10 mt-20 flex flex-col space-y-4 md:text-center text-left">
               <div class="flex items-center justify-center bg-gray-600/70 py-3">
-                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 md:text-center text-left font-medium text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
-                  <span class="text-center text-base font-normal tracking-wide group-hover:bg-red-500">Dashboard</span>
+                  <span class="md:text-center text-left text-base font-normal tracking-wide group-hover:bg-red-500">Dashboard</span>
                 </a>
               </div>
               <div class="flex items-center justify-center py-3">
-                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 md:text-center text-left font-medium text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
-                  <span class="text-center text-base font-normal tracking-wide">Schedule</span>
+                  <span class="md:text-center text-left text-base font-normal tracking-wide">Schedule</span>
                 </a>
               </div>
               <div class="flex items-center justify-center py-3">
-                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 md:text-center text-left font-medium text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
-                  <span class="text-center text-base font-normal tracking-wide">Contact</span>
+                  <span class="md:text-center text-left text-base font-normal tracking-wide">Contact</span>
                 </a>
               </div>
             </nav>
           </div>
-          <div class="flex flex-shrink-0 border-t border-indigo-800 p-4">
+          <div class="flex flex-shrink-0   p-4">
             <div class="flex w-full items-center justify-center">
               <div class="flex items-center gap-4">
                 <div class="bg-primary flex h-6 w-6 items-center justify-center rounded-full p-1 ring-1">
@@ -152,6 +142,42 @@
               <!-- Your content -->
 
               <!-- Steps -->
+               <!-- Mobile Steps -->
+               <div class="md:hidden block">
+                <div class="relative flex items-center gap-4  ">
+                  
+                  <span  class="bg-primary relative flex h-10 w-10 items-center justify-center rounded-full sm:h-12 sm:w-12">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <circle id="Ellipse_13" data-name="Ellipse 13" cx="25" cy="25" r="25" fill="#cfd643" />
+                        </clipPath>
+                      </defs>
+                      <g id="Mask_Group_2" data-name="Mask Group 2" clip-path="url(#clip-path)">
+                        <g id="Group_1085" data-name="Group 1085" transform="translate(-22.37 12.714)">
+                          <rect id="Rectangle_599" data-name="Rectangle 599" width="24.767" height="1.288" transform="translate(18.751 18.975)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                          <path id="Path_24040" data-name="Path 24040" d="M199.655,40.193c1.288,0,4.071-.161,5.346-1.475l-.921-.9c-1,1.031-3.929,1.127-4.966,1.069l-24.194-1.121a.81.81,0,0,1-.47-.187l-4.29-3.62-.831.986,4.29,3.62a2.114,2.114,0,0,0,1.243.49l24.187,1.121Z" transform="translate(-158.101 -30.964)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                          <path id="Path_24041" data-name="Path 24041" d="M485.725,160.187a5.707,5.707,0,1,0-4.023-1.672A5.695,5.695,0,0,0,485.725,160.187Zm0-10.1a4.412,4.412,0,1,1-3.114,1.292,4.406,4.406,0,0,1,3.114-1.292" transform="translate(-471.966 -135.653)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                          <path id="Path_24042" data-name="Path 24042" d="M510.119,182.222a3.33,3.33,0,1,0-2.355-.975,3.33,3.33,0,0,0,2.355.975m0-5.372a2.042,2.042,0,1,1-1.444.6,2.043,2.043,0,0,1,1.444-.6" transform="translate(-496.36 -160.053)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                          <path id="Path_24044" data-name="Path 24044" d="M92.335,160.187a5.7,5.7,0,1,0-4.025-1.67A5.7,5.7,0,0,0,92.335,160.187Zm0-10.1a4.405,4.405,0,1,1-3.116,1.29,4.406,4.406,0,0,1,3.116-1.29" transform="translate(-43.825 -135.653)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                          <path id="Path_24047" data-name="Path 24047" d="M652.257,104.243h2.828a1.411,1.411,0,0,0,1.411-1.411V99.612a1.411,1.411,0,0,0-1.411-1.411h-2.828Zm2.828-4.754a.129.129,0,0,1,.122.123v3.221a.129.129,0,0,1-.122.122h-1.54V99.489Z" transform="translate(-652.257 -89.526)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                          <path id="Path_24048" data-name="Path 24048" d="M5.52,20.263H8.74V18.975H5.52a4.232,4.232,0,0,1-4.232-4.232V8.378A1.121,1.121,0,0,1,2.241,7.27l3.865-.644,11.614-5.1a2.669,2.669,0,0,1,1.095-.238h10.39c.1,0,6.866-.258,11.511,3.3l.064.045,5.5,3.291,10.448,2.705a5.083,5.083,0,0,1,3.82,5.34,25.535,25.535,0,0,1-.393,2.834.213.213,0,0,1-.213.168H53.5v1.288h6.4A1.5,1.5,0,0,0,61.4,19.052a28.546,28.546,0,0,0,.438-2.944,6.384,6.384,0,0,0-4.767-6.693L46.694,6.7l-5.217-3.15C36.484-.279,29.469,0,29.173,0H18.815a3.976,3.976,0,0,0-1.61.342L5.642,5.415l-3.607.567A2.409,2.409,0,0,0,0,8.378v6.377a5.52,5.52,0,0,0,5.52,5.507Z" transform="translate(0.001 0)" fill="#fff" stroke="#fff" stroke-width="0.25" />
+                        </g>
+                      </g>
+                    </svg>
+
+                
+                  </span>
+
+                  <div class="w-full">
+                    <h1 class="text-xs font-bold text-gray-500">STEP 1</h1>
+                    <h1 class="text-sm tracking-wide font-semibold py-2 text-gray-800">Getting Started</h1>
+                    <div class="relative w-full bg-gray-300 h-[0.1rem] rounded-full ">
+                      <div class="absolute top-0 left-0 h-full w-[25%] bg-primary"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="relative flex">
                 <nav aria-label="Progress" class="mx-auto">
                   <ol role="list" class="flex items-center">
@@ -187,9 +213,9 @@
                     <li class="relative hidden pr-20 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
                       <!-- Completed Step -->
                       <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
-                        <div class="h-0.5 w-full bg-primary"></div>
+                        <div class="h-0.5 w-full bg-gray-200"></div>
                       </div>
-                      <a href="#" class="relative bg-primary flex h-10 w-10 items-center justify-center rounded-full ring-red-100 sm:h-12 sm:w-12">
+                      <a href="#" class="relative flex h-10 w-10 items-center justify-center rounded-full border-2 ring-gray-100 sm:h-12 sm:w-12">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22.697" height="22.698" viewBox="0 0 22.697 22.698">
                           <path id="Path_24062" data-name="Path 24062" d="M21.077,0H1.622A1.622,1.622,0,0,0,0,1.621V21.076A1.622,1.622,0,0,0,1.622,22.7H21.077A1.622,1.622,0,0,0,22.7,21.076V1.621A1.622,1.622,0,0,0,21.077,0M17.766,2.622h0a2.176,2.176,0,1,1-1.539.637,2.177,2.177,0,0,1,1.539-.637Zm3.044,16.253h0a1.431,1.431,0,0,1-1.354,1.512H3.244a1.431,1.431,0,0,1-1.338-1.512v-.109a1.59,1.59,0,0,1,.519-1.2l4.053-3.546a1.216,1.216,0,0,1,1.621,0l1.358,1.192h0a1.216,1.216,0,0,0,1.621,0l4.381-3.842h0a1.216,1.216,0,0,1,1.621,0l3.177,2.788h0a1.59,1.59,0,0,1,.519,1.2Z" transform="translate(-0.001)" fill="#e6e6e6" />
                         </svg>
@@ -201,9 +227,9 @@
                     <li class="relative hidden pr-20 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
                       <!-- Current Step -->
                       <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
-                        <div class="h-0.5 w-full bg-primary"></div>
+                        <div class="h-0.5 w-full bg-gray-200"></div>
                       </div>
-                      <a href="#" class="relative bg-primary flex h-10 w-10 items-center justify-center rounded-full border-2   sm:h-12 sm:w-12" aria-current="step">
+                      <a href="#" class="relative flex h-10 w-10 items-center justify-center rounded-full border-2 bg-white sm:h-12 sm:w-12" aria-current="step">
                         <!-- <span class="h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true"></span> -->
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="30.856" height="25.38" viewBox="0 0 30.856 25.38">
@@ -237,58 +263,131 @@
                     </li>
                   </ol>
                 </nav>
-              </div> 
+              </div>
 
               <div class="mx-auto py-20 md:max-w-xl md:py-44">
-                <div class=" ">
-                  <h1 class="pb-6 text-center text-4xl font-semibold leading-snug ">Choose An Installation Date</h1>
-                   
-                    <div class="relative max-w-sm mx-auto">
-                        
-                        <div inline-datepicker data-date="02/25/2022"   class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full   " ></div>
-                    </div>
-  
-                   
-                  <!--  -->
-
-                  <div class="max-w-xs  mx-auto"> 
-                    <div class="py-6">
-                        <h1 class="text-center font-bold py-3">Eligible Times</h1>
-                    <p class="text-gray-700 text-xs text-center">
-                        Select the time of day most convenient. 
+                <div class="">
+                  <h1 class="pb-6 md:text-center text-left text-4xl font-semibold leading-snug">Property Description</h1>
+                    <p class="text-primary md:text-center text-left pb-6 font-bold">
+                        My charger will be located in an detached garage:
                     </p>
-                    </div>
-                    <ul class="grid grid-cols-2 w-full gap-6 ">
+                  <!--  -->
+                  <div class="max-w-xs  mx-auto"> 
+                    <ul class="grid w-full gap-6 ">
                      
                       <li>
                         <input type="radio" id="hosting-big" name="hosting" value="hosting-big" class="peer hidden" />
-                        <label for="hosting-big" class="inline-flex text-center w-full shadow-md cursor-pointer items-center justify-center rounded-lg border border-gray-100 bg-white px-5 py-3 text-black hover:bg-primary hover:text-white peer-checked:border-blue-800 peer-checked:text-white peer-checked:bg-primary   ">
-                          <div class="block text-center"> 
-                            <div class="w-full text-center font-normal text-sm">
-                                Morning
+                        <label for="hosting-big" class="inline-flex w-full shadow-md cursor-pointer items-center justify-between rounded-lg border border-gray-100 bg-white px-5 py-3 text-black hover:bg-primary hover:text-white peer-checked:border-blue-800 peer-checked:text-white peer-checked:bg-primary   ">
+                          <div class="block"> 
+                            <div class="w-full md:text-center text-left font-normal text-sm">
+                                I have an electrical panel in my garage.
                             </div>
                           </div>
                        
                         </label>
 
-                        
+                        <div class="my-4 rounded-md shadow-sm ring-1 px-4 py-12 ring-gray-200">
+                            <p class="text-xs md:text-center text-left
+                            ">Please estimate the distance from your electrical panel to the charger location.</p>
+                            <nav aria-label="Progress" class="mx-auto">
+                                <ol role="list" class="flex items-center mx-auto   mt-8">
+                                  <li class="relative pr-8 sm:pr-32 ml-auto">
+                                    <!-- Completed Step -->
+                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                      <div class="h-0.5 w-full bg-primary"></div>
+                                    </div>
+                                    <a href="#" class="relative flex h-5 w-5 items-center justify-center rounded-full bg-primary hover:bg-indigo-900">
+                                      
+                                      <span class=" mt-14 whitespace-nowrap text-xs font-light sm:text-sm">0 ft</span>
+                                    </a>
+                                  </li>
+                              
+                                  <li class="relative pr-8 sm:pr-20">
+                                    <!-- Completed Step -->
+                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                      <div class="h-0.5 w-full bg-primary"></div>
+                                    </div>
+                                    <a href="#" class="relative flex h-5 w-5 items-center justify-center rounded-full bg-primary hover:bg-indigo-900">
+                                     
+                                      <span class=" mt-14 whitespace-nowrap text-xs font-light sm:text-sm">65 ft</span>
+                                        
+                                    </a>
+                                  </li>
+                              
+                                  <li class="relative mr-auto ">
+                                    <!-- Current Step -->
+                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                      <div class="h-0.5 w-full bg-gray-200"></div>
+                                    </div>
+                                    <a href="#" class="relative flex h-5 w-5 items-center justify-center rounded-full border-2 border-primary bg-white" aria-current="step">
+                                        <span class=" mt-14 whitespace-nowrap text-xs font-light sm:text-sm">100 ft</span>
+
+                                    </a>
+                                  </li> 
+                              
+                                 
+                                </ol>
+                              </nav>
+                              
+                        </div>
                       </li>
                       <li>
                         <input type="radio" id="hosting-xl" name="hosting" value="hosting-xl" class="peer hidden" />
-                        <label for="hosting-xl" class="inline-flex w-full shadow-md cursor-pointer items-center justify-center rounded-lg border border-gray-100 bg-white px-5 py-3 text-black hover:bg-primary hover:text-white peer-checked:border-blue-800 peer-checked:text-white peer-checked:bg-primary   ">
+                        <label for="hosting-xl" class="inline-flex w-full shadow-md cursor-pointer items-center justify-between rounded-lg border border-gray-100 bg-white px-5 py-3 text-black hover:bg-primary hover:text-white peer-checked:border-blue-800 peer-checked:text-white peer-checked:bg-primary   ">
                           <div class="block"> 
-                            <div class="w-full whitespace-nowrap text-center font-normal text-sm">
-                                Afternoon
+                            <div class="w-full whitespace-nowrap md:text-center text-left font-normal text-sm">
+                                I do not have an electrical panel in my garage.
                             </div>
                           </div>
                        
                         </label>
-                        
+                        <div class="my-4 rounded-md shadow-sm ring-1 px-4 py-12 ring-gray-200">
+                            <p class="text-xs md:text-center text-left
+                            ">Please estimate the distance from your electrical panel to the charger location.</p>
+                            <nav aria-label="Progress" class="mx-auto">
+                                <ol role="list" class="flex items-center mx-auto   mt-8">
+                                  <li class="relative pr-8 sm:pr-32 ml-auto">
+                                    <!-- Completed Step -->
+                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                      <div class="h-0.5 w-full bg-primary"></div>
+                                    </div>
+                                    <a href="#" class="relative flex h-5 w-5 items-center justify-center rounded-full bg-primary hover:bg-indigo-900">
+                                      
+                                      <span class=" mt-14 whitespace-nowrap text-xs font-light sm:text-sm">0 ft</span>
+                                    </a>
+                                  </li>
+                              
+                                  <li class="relative pr-8 sm:pr-20">
+                                    <!-- Completed Step -->
+                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                      <div class="h-0.5 w-full bg-primary"></div>
+                                    </div>
+                                    <a href="#" class="relative flex h-5 w-5 items-center justify-center rounded-full bg-primary hover:bg-indigo-900">
+                                     
+                                      <span class=" mt-14 whitespace-nowrap text-xs font-light sm:text-sm">65 ft</span>
+                                        
+                                    </a>
+                                  </li>
+                              
+                                  <li class="relative mr-auto ">
+                                    <!-- Current Step -->
+                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                      <div class="h-0.5 w-full bg-gray-200"></div>
+                                    </div>
+                                    <a href="#" class="relative flex h-5 w-5 items-center justify-center rounded-full border-2 border-primary bg-white" aria-current="step">
+                                        <span class=" mt-14 whitespace-nowrap text-xs font-light sm:text-sm">100 ft</span>
+
+                                    </a>
+                                  </li> 
+                              
+                                 
+                                </ol>
+                              </nav>
+                              
+                        </div>
                       </li>
                     </ul>
                   </div>
-                  
-                  
 
                   <div class="flex pt-6 mt-8">
                     <button class="border-primary text-primary hover:bg-primary mx-auto border-2 px-8 py-3 font-semibold transition-all duration-200 hover:text-white">SAVE & CONTINUE</button>
@@ -300,11 +399,5 @@
         </main>
       </div>
     </div>
-
-    
-      
-     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/datepicker.min.js"></script>
-
   </body>
 </html>

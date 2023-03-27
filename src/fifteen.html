@@ -70,7 +70,7 @@
                 </a>
               </nav>
             </div>
-            <div class="flex flex-shrink-0 border-t border-indigo-800 p-4">
+            <div class="flex flex-shrink-0 p-4">
               <a href="#" class="group block flex-shrink-0">
                 <div class="flex items-center">
                   <div>
@@ -94,28 +94,28 @@
             <div class="flex flex-shrink-0 items-center justify-center px-4">
               <img class="h-20 w-auto" src="../assets/logo_white.svg" alt="Your Company" />
             </div>
-            <nav class="mt-10 mt-20 flex flex-col space-y-4 text-center">
+            <nav class="mt-10 mt-20 flex flex-col space-y-4 text-left md:text-center">
               <div class="flex items-center justify-center bg-gray-600/70 py-3">
-                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-left font-medium text-white md:text-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
-                  <span class="text-center text-base font-normal tracking-wide group-hover:bg-red-500">Dashboard</span>
+                  <span class="text-left text-base font-normal tracking-wide group-hover:bg-red-500 md:text-center">Dashboard</span>
                 </a>
               </div>
               <div class="flex items-center justify-center py-3">
-                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-left font-medium text-white md:text-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
-                  <span class="text-center text-base font-normal tracking-wide">Schedule</span>
+                  <span class="text-left text-base font-normal tracking-wide md:text-center">Schedule</span>
                 </a>
               </div>
               <div class="flex items-center justify-center py-3">
-                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-center font-medium text-white">
+                <a href="#" class="group mx-auto inline-flex items-center justify-start gap-x-2 text-left font-medium text-white md:text-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#CED643" d="M4 20V9h4v11Zm6 0V4h4v16Zm6 0v-7h4v7Z" /></svg>
-                  <span class="text-center text-base font-normal tracking-wide">Contact</span>
+                  <span class="text-left text-base font-normal tracking-wide md:text-center">Contact</span>
                 </a>
               </div>
             </nav>
           </div>
-          <div class="flex flex-shrink-0 border-t border-indigo-800 p-4">
+          <div class="flex flex-shrink-0 p-4">
             <div class="flex w-full items-center justify-center">
               <div class="flex items-center gap-4">
                 <div class="bg-primary flex h-6 w-6 items-center justify-center rounded-full p-1 ring-1">
@@ -142,6 +142,33 @@
               <!-- Your content -->
 
               <!-- Steps -->
+              <div class="block md:hidden">
+                <div class="relative flex items-center gap-4">
+                  <span class="bg-primary relative flex h-10 w-10 items-center justify-center rounded-full sm:h-12 sm:w-12">
+                    <svg id="Group_284" data-name="Group 284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.931" height="17.198" viewBox="0 0 22.931 17.198">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect id="Rectangle_365" data-name="Rectangle 365" width="22.931" height="17.198" fill="none" stroke="#e6e6e6" stroke-width="3" />
+                        </clipPath>
+                      </defs>
+                      <g id="Group_195" data-name="Group 195" clip-path="url(#clip-path)">
+                        <path id="Path_911" data-name="Path 911" d="M18.2,1,6.733,12.465,1,6.733" transform="translate(1.866 1.866)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                      </g>
+                    </svg>
+                  </span>
+
+                  <div class="w-full">
+                    <h1 class="text-xs font-bold text-gray-500">STEP 4</h1>
+                    <h1 class="py-2 text-sm font-semibold tracking-wide text-gray-800">CONFIRMATION</h1>
+                    <div class="relative h-[0.1rem] w-full rounded-full bg-gray-300">
+                      <div class="bg-primary absolute top-0 left-0 h-full w-[100%]"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+              <!--  -->
               <div class="relative flex">
                 <nav aria-label="Progress" class="mx-auto">
                   <ol role="list" class="flex items-center">
@@ -177,9 +204,9 @@
                     <li class="relative hidden pr-20 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
                       <!-- Completed Step -->
                       <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
-                        <div class="h-0.5 w-full bg-primary"></div>
+                        <div class="bg-primary h-0.5 w-full"></div>
                       </div>
-                      <a href="#" class="relative bg-primary flex h-10 w-10 items-center justify-center rounded-full ring-red-100 sm:h-12 sm:w-12">
+                      <a href="#" class="bg-primary relative flex h-10 w-10 items-center justify-center rounded-full ring-red-100 sm:h-12 sm:w-12">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22.697" height="22.698" viewBox="0 0 22.697 22.698">
                           <path id="Path_24062" data-name="Path 24062" d="M21.077,0H1.622A1.622,1.622,0,0,0,0,1.621V21.076A1.622,1.622,0,0,0,1.622,22.7H21.077A1.622,1.622,0,0,0,22.7,21.076V1.621A1.622,1.622,0,0,0,21.077,0M17.766,2.622h0a2.176,2.176,0,1,1-1.539.637,2.177,2.177,0,0,1,1.539-.637Zm3.044,16.253h0a1.431,1.431,0,0,1-1.354,1.512H3.244a1.431,1.431,0,0,1-1.338-1.512v-.109a1.59,1.59,0,0,1,.519-1.2l4.053-3.546a1.216,1.216,0,0,1,1.621,0l1.358,1.192h0a1.216,1.216,0,0,0,1.621,0l4.381-3.842h0a1.216,1.216,0,0,1,1.621,0l3.177,2.788h0a1.59,1.59,0,0,1,.519,1.2Z" transform="translate(-0.001)" fill="#e6e6e6" />
                         </svg>
@@ -191,9 +218,9 @@
                     <li class="relative hidden pr-20 sm:pr-28 md:block md:pr-32 lg:pr-36 xl:pr-44">
                       <!-- Current Step -->
                       <div class="absolute left-16 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
-                        <div class="h-0.5 w-full bg-primary"></div>
+                        <div class="bg-primary h-0.5 w-full"></div>
                       </div>
-                      <a href="#" class="relative bg-[#075EAD] flex h-10 w-10 items-center justify-center rounded-full   bg-white sm:h-12 sm:w-12" aria-current="step">
+                      <a href="#" class="bg-primary relative flex h-10 w-10 items-center justify-center rounded-full ring-red-100 sm:h-12 sm:w-12" aria-current="step">
                         <!-- <span class="h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true"></span> -->
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="28.856" height="23.38" viewBox="0 0 30.856 25.38">
@@ -210,7 +237,7 @@
                       <div class="absolute left-12 right-6 bottom-0 top-0 flex items-center" aria-hidden="true">
                         <div class="h-0.5 w-full bg-gray-200"></div>
                       </div>
-                      <a href="#" class="group bg-[#075EAD] relative flex h-10 w-10 items-center justify-center rounded-full border-2 border-gray-300 bg-white hover:border-gray-400 sm:h-12 sm:w-12">
+                      <a href="#" class="bg-primary relative flex h-10 w-10 items-center justify-center rounded-full ring-red-100 sm:h-12 sm:w-12">
                         <svg id="Group_284" data-name="Group 284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.931" height="17.198" viewBox="0 0 22.931 17.198">
                           <defs>
                             <clipPath id="clip-path">
@@ -227,51 +254,46 @@
                     </li>
                   </ol>
                 </nav>
-              </div> 
+              </div>
 
               <div class="mx-auto py-20 md:max-w-xl md:py-44">
                 <div class=" ">
-                  <h1 class="pb-6 text-center text-4xl font-semibold leading-snug ">You have successfully made an appointment.</h1>
-                   <div class="max-w-xs mx-auto">
-                    
-                    <p class="text-black text-sm text-center pb-6 font-light">
-                        The appointment confirmation has been sent to your email address.
-                    </p>
-                   </div>
-                   
+                  <h1 class="pb-6 text-left text-4xl font-semibold leading-snug md:text-center">You have successfully made an appointment.</h1>
+                  <div class="mx-auto max-w-xs">
+                    <p class="pb-6 text-left text-sm font-light text-black md:text-center">The appointment confirmation has been sent to your email address.</p>
+                  </div>
+
                   <!--  -->
 
-                  <div class="max-w-md mx-auto">
-                    <div class="grid  gap-4">
-                        <div class="relative flex flex-col gap-4 rounded-lg border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500 absolute top-4 right-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                              </svg>
-                              
-                            <div class="flex items-center gap-4 px-4 py-4">
-                            <div class="flex-shrink-0">
-                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                              </div>
-                              <div class="min-w-0 flex-1">
-                                <a href="#" class="focus:outline-none">
-                                  <span class="absolute inset-0" aria-hidden="true"></span>
-                                  <p class="text-sm font-medium text-primary">TECHNICIAN TBD</p> 
-                                </a>
-                              </div>
-                         </div>
-                          <div class="py-2 flex items-center gap-4 block bg-blue-50 px-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-primary">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                              </svg>
-                              <p class="text-xs font-light">
-                                June 12, 2023 / Morning Appointment
-                              </p>
-                          </div>
-                        </div> 
-                      </div>
-                  </div> 
+                  <div class="mx-auto max-w-md">
+                    <div class="grid gap-4">
+                      <div class="relative flex flex-col gap-4 rounded-lg border border-gray-200 bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-4 right-4 h-5 w-5 text-gray-500">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                        </svg>
 
-                  <div class="flex pt-6 mt-8">
+                        <div class="flex items-center gap-4 px-4 py-4">
+                          <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                          </div>
+                          <div class="min-w-0 flex-1">
+                            <a href="#" class="focus:outline-none">
+                              <span class="absolute inset-0" aria-hidden="true"></span>
+                              <p class="text-primary text-sm font-medium">TECHNICIAN TBD</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="block flex items-center gap-4 bg-blue-50 py-2 px-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-primary h-5 w-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                          </svg>
+                          <p class="text-xs font-light">June 12, 2023 / Morning Appointment</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-8 flex pt-6">
                     <button class="border-primary text-primary hover:bg-primary mx-auto border-2 px-8 py-3 font-semibold transition-all duration-200 hover:text-white">GO TO MY DASHBOARD</button>
                   </div>
                 </div>

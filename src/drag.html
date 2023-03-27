@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+ 
+
+
+    <div class="max-w-md mt-12 m-24">
+        
+        <div class="relative h-0.5 rounded-full bg-gray-300 rounded-full">
+            <div class="absolute h-full bg-primary rounded-full" style="width: 50%"></div>
+            <div class="absolute h-4 w-4 bg-primary rounded-full top-1/2 transform -translate-y-1/2 -left-2"></div>
+            <div class="absolute h-4 w-4 bg-gray-300 rounded-full top-1/2 transform -translate-y-1/2 -right-2"></div>
+            <div id="draggable-point" class="absolute h-4 w-4 right-0 left-8 bg-primary -top-[300%]  rounded-full shadow-lg cursor-pointer  transform ">
+              <div id="percentage-display" class="md:text-center text-left  2right-2  top-6  absolute ">50ft</div>
+            </div>
+          </div>
+          <div class="flex w-full relative justify-between mt-4">
+            <div class="mr-8 absolute -left-2">0ft</div>
+            <div class="ml-8 absolute -right-7">100ft</div>
+          </div>
+    </div>
+      
+    
+      
+      
+<script>
+   const draggablePoint = document.querySelector('#draggable-point');
+  const progressBar = document.querySelector('.bg-primary');
+  const percentageDisplay = document.querySelector('#percentage-display');
+  const progressContainerWidth = progressBar.parentNode.offsetWidth;
+  const draggablePointWidth = draggablePoint.offsetWidth;
+  const step = 1;
+  const minValue = 0;
+  const maxValue = 100;
+
+  let isDragging = false;
+  let currentValue = 50;
+
+  function updateValue(newPercentage) {
+    currentValue = Math.round(((newPercentage / 100) * (maxValue - minValue) + minValue) / step) * step;
+    percentageDisplay.textContent = `${currentValue}ft`;
+  }
+
+  function updateDraggablePoint(newPercentage) {
+    const newLeft = (newPercentage / 100) * progressContainerWidth - draggablePointWidth / 2;
+    draggablePoint.style.left = `${newLeft}px`;
+  }
+
+  function updateProgressBar(newPercentage) {
+    progressBar.style.width = `${newPercentage}%`;
+  }
+
+  updateValue(currentValue);
+  updateDraggablePoint(((currentValue - minValue) / (maxValue - minValue)) * 100);
+  updateProgressBar(((currentValue - minValue) / (maxValue - minValue)) * 100);
+
+  draggablePoint.addEventListener('mousedown', () => {
+    isDragging = true;
+  });
+
+  document.addEventListener('mousemove', (event) => {
+    if (isDragging) {
+      const newPercentage = Math.max(0, Math.min(100, ((event.clientX - progressBar.parentNode.getBoundingClientRect().left) / progressContainerWidth) * 100));
+      updateValue(newPercentage);
+      updateDraggablePoint(newPercentage);
+      updateProgressBar(newPercentage);
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+  </script>
+      
+      
+      
+      
+      
+</body>
+</html>
