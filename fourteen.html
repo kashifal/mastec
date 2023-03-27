@@ -6,12 +6,15 @@
     <link href="./style.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
     <style>
-      .datepicker-picker{
-          width: 100%;
+       .datepicker-picker{
+          min-width: 100%; 
       }
+      .w-64 {
+        width: 100% !important;
+}
       .days{
-          margin-left: auto;
-          margin-right: auto;
+           
+          width: 100%;
       }
     </style>
   </head>
@@ -261,7 +264,7 @@
 
               <div class="mx-auto py-20 md:max-w-xl md:py-32">
                 <div class=" ">
-                  <h1 class="pb-6 text-left text-4xl font-semibold leading-snug md:text-center">Choose An Installation Date</h1>
+                  <h1 class="pb-6 text-center text-4xl font-semibold leading-snug md:text-center">Choose An Installation Date</h1>
 
                   <div class="relative mx-auto max-w-sm">
                     <div inline-datepicker data-date="02/25/2022" class="block w-full rounded-lg border border-gray-300 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"></div>

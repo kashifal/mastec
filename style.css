@@ -1085,6 +1085,10 @@ select{
   margin-top: 2rem;
 }
 
+.ml-20{
+  margin-left: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -1317,6 +1321,14 @@ select{
   max-width: 20rem;
 }
 
+.max-w-5xl{
+  max-width: 64rem;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1386,6 +1398,10 @@ select{
   gap: 1.5rem;
 }
 
+.gap-44{
+  gap: 11rem;
+}
+
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1415,10 +1431,21 @@ select{
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
 }
 
 .overflow-hidden{
@@ -1823,6 +1850,11 @@ select{
   line-height: 1rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -1845,6 +1877,10 @@ select{
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-thin{
+  font-weight: 100;
 }
 
 .leading-6{
@@ -1930,6 +1966,11 @@ select{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .underline{
