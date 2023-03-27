@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    './**/*.html',
+    './js/**/*.js',
+  ],
   theme: {
     extend: {
       colors:{
@@ -9,5 +12,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line global-require
+    require('@tailwindcss/forms'),
+  ],
 }
