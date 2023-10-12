@@ -1407,6 +1407,10 @@ select{
   padding-right: 0.5rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1830,12 +1834,20 @@ select{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:items-center{
     align-items: center;
   }
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 }
 
