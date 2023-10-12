@@ -7,8 +7,1288 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1 class="text-7xl font-bold">wow</h1>
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-100 lg:shadow-sm">
+      <div class="mx-auto px-2 sm:px-8 lg:px-12">
+        <div class="relative flex h-20 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+            Icon when menu is closed.
 
-    <!-- Footer  -->
+            Menu open: "hidden", Menu closed: "block"
+          -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden ml-12 lg:block">
+              <div class="flex lg:space-x-2 xl:space-x-4">
+                <a
+                  href="#"
+                  class="text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-sm xl:text-base font-normal"
+                  aria-current="page"
+                  >How It Works</a
+                >
+                <div id="btn_1" class="wow">
+                  <div class="relative flex justify-center">
+                    <button
+                      type="button"
+                      class="inline-flex items-center gap-x-1 leading-6 text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-sm xl:text-base font-normal"
+                      aria-expanded="false"
+                    >
+                      <span>Services</span>
+                      <svg
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="floating_1"
+                      class="absolute left-1/2 hidden z-10 mt-16 flex w-screen max-w-max -translate-x-[20%] px-4"
+                    >
+                      <div
+                        class="max-w-5xl w-[70vw] xl:w-screen flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+                      >
+                        <div class="p-4">
+                          <div
+                            class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                          >
+                            <div
+                              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                            >
+                              <svg
+                                class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-gray-900">
+                                Help center
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-gray-600">
+                                Get all of your questions answered
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                          >
+                            <div
+                              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                            >
+                              <svg
+                                class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-gray-900">
+                                Guides
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-gray-600">
+                                Learn how to maximize our platform
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                          >
+                            <div
+                              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                            >
+                              <svg
+                                class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-gray-900">
+                                Events
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-gray-600">
+                                See meet-ups and other events near you
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bg-gray-50 p-8">
+                          <div class="flex justify-between">
+                            <h3
+                              class="text-sm font-semibold leading-6 text-gray-500"
+                            >
+                              Recent posts
+                            </h3>
+                            <a
+                              href="#"
+                              class="text-sm font-semibold leading-6 text-indigo-600"
+                              >See all <span aria-hidden="true">&rarr;</span></a
+                            >
+                          </div>
+                          <ul role="list" class="mt-6 space-y-6">
+                            <li class="relative">
+                              <time
+                                datetime="2023-03-05"
+                                class="block text-xs leading-6 text-gray-600"
+                                >Mar 5, 2023</time
+                              >
+                              <a
+                                href="#"
+                                class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                              >
+                                Boost your conversion rate
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time
+                                datetime="2023-02-25"
+                                class="block text-xs leading-6 text-gray-600"
+                                >Feb 25, 2023</time
+                              >
+                              <a
+                                href="#"
+                                class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                              >
+                                How to use search engine optimization to drive
+                                traffic to your site
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time
+                                datetime="2023-02-21"
+                                class="block text-xs leading-6 text-gray-600"
+                                >Feb 21, 2023</time
+                              >
+                              <a
+                                href="#"
+                                class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                              >
+                                Improve your customer experience
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="btn_2" class="relative flex justify-center">
+                  <button
+                    type="button"
+                    class="inline-flex items-center gap-x-1 leading-6 text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-sm xl:text-base font-normal"
+                    aria-expanded="false"
+                  >
+                    <span>Resources Center</span>
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="floating_2"
+                    class="absolute hidden left-1/2 z-10 mt-16 flex w-screen max-w-max lg:-translate-x-[40%] px-4"
+                  >
+                    <div
+                      class="max-w-5xl w-[70vw] xl:w-screen flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+                    >
+                      <div class="p-4">
+                        <div
+                          class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                        >
+                          <div
+                            class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                          >
+                            <svg
+                              class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <a href="#" class="font-semibold text-gray-900">
+                              Help center
+                              <span class="absolute inset-0"></span>
+                            </a>
+                            <p class="mt-1 text-gray-600">
+                              Get all of your questions answered
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                        >
+                          <div
+                            class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                          >
+                            <svg
+                              class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <a href="#" class="font-semibold text-gray-900">
+                              Guides
+                              <span class="absolute inset-0"></span>
+                            </a>
+                            <p class="mt-1 text-gray-600">
+                              Learn how to maximize our platform
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                        >
+                          <div
+                            class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                          >
+                            <svg
+                              class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <a href="#" class="font-semibold text-gray-900">
+                              Events
+                              <span class="absolute inset-0"></span>
+                            </a>
+                            <p class="mt-1 text-gray-600">
+                              See meet-ups and other events near you
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-gray-50 p-8">
+                        <div class="flex justify-between">
+                          <h3
+                            class="text-sm font-semibold leading-6 text-gray-500"
+                          >
+                            Recent posts
+                          </h3>
+                          <a
+                            href="#"
+                            class="text-sm font-semibold leading-6 text-indigo-600"
+                            >See all <span aria-hidden="true">&rarr;</span></a
+                          >
+                        </div>
+                        <ul role="list" class="mt-6 space-y-6">
+                          <li class="relative">
+                            <time
+                              datetime="2023-03-05"
+                              class="block text-xs leading-6 text-gray-600"
+                              >Mar 5, 2023</time
+                            >
+                            <a
+                              href="#"
+                              class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              Boost your conversion rate
+                              <span class="absolute inset-0"></span>
+                            </a>
+                          </li>
+                          <li class="relative">
+                            <time
+                              datetime="2023-02-25"
+                              class="block text-xs leading-6 text-gray-600"
+                              >Feb 25, 2023</time
+                            >
+                            <a
+                              href="#"
+                              class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              How to use search engine optimization to drive
+                              traffic to your site
+                              <span class="absolute inset-0"></span>
+                            </a>
+                          </li>
+                          <li class="relative">
+                            <time
+                              datetime="2023-02-21"
+                              class="block text-xs leading-6 text-gray-600"
+                              >Feb 21, 2023</time
+                            >
+                            <a
+                              href="#"
+                              class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              Improve your customer experience
+                              <span class="absolute inset-0"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="btn_3" class="relative flex justify-center">
+                  <button
+                    type="button"
+                    class="inline-flex items-center gap-x-1 leading-6 text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-sm xl:text-base font-normal"
+                    aria-expanded="false"
+                  >
+                    <span>About Us</span>
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="floating_3"
+                    class="absolute hidden left-1/2 z-10 mt-16 flex w-screen max-w-max -translate-x-[40%] px-4"
+                  >
+                    <div
+                      class="max-w-md w-[70vw] xl:w-screen flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+                    >
+                      <div class="p-4">
+                        <div
+                          class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                        >
+                          <div
+                            class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                          >
+                            <svg
+                              class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <a href="#" class="font-semibold text-gray-900">
+                              Help center
+                              <span class="absolute inset-0"></span>
+                            </a>
+                            <p class="mt-1 text-gray-600">
+                              Get all of your questions answered
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                        >
+                          <div
+                            class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                          >
+                            <svg
+                              class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <a href="#" class="font-semibold text-gray-900">
+                              Guides
+                              <span class="absolute inset-0"></span>
+                            </a>
+                            <p class="mt-1 text-gray-600">
+                              Learn how to maximize our platform
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                        >
+                          <div
+                            class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                          >
+                            <svg
+                              class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <a href="#" class="font-semibold text-gray-900">
+                              Events
+                              <span class="absolute inset-0"></span>
+                            </a>
+                            <p class="mt-1 text-gray-600">
+                              See meet-ups and other events near you
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-gray-50 p-8">
+                        <div class="flex justify-between">
+                          <h3
+                            class="text-sm font-semibold leading-6 text-gray-500"
+                          >
+                            Recent posts
+                          </h3>
+                          <a
+                            href="#"
+                            class="text-sm font-semibold leading-6 text-indigo-600"
+                            >See all <span aria-hidden="true">&rarr;</span></a
+                          >
+                        </div>
+                        <ul role="list" class="mt-6 space-y-6">
+                          <li class="relative">
+                            <time
+                              datetime="2023-03-05"
+                              class="block text-xs leading-6 text-gray-600"
+                              >Mar 5, 2023</time
+                            >
+                            <a
+                              href="#"
+                              class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              Boost your conversion rate
+                              <span class="absolute inset-0"></span>
+                            </a>
+                          </li>
+                          <li class="relative">
+                            <time
+                              datetime="2023-02-25"
+                              class="block text-xs leading-6 text-gray-600"
+                              >Feb 25, 2023</time
+                            >
+                            <a
+                              href="#"
+                              class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              How to use search engine optimization to drive
+                              traffic to your site
+                              <span class="absolute inset-0"></span>
+                            </a>
+                          </li>
+                          <li class="relative">
+                            <time
+                              datetime="2023-02-21"
+                              class="block text-xs leading-6 text-gray-600"
+                              >Feb 21, 2023</time
+                            >
+                            <a
+                              href="#"
+                              class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              Improve your customer experience
+                              <span class="absolute inset-0"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 space-x-10 hidden sm:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <a
+              class="text-base hidden xl:flex items-center gap-2 font-medium duration-200 text-primary"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <span class="text-base font-medium duration-200 text-primary"
+                >+1 884 84940480</span
+              >
+            </a>
+            <a
+              class="text-base duration-200 hover:text-primary text-gray-800"
+              href="#"
+              >Login</a
+            >
+            <button
+              class="text-base font-medium px-6 py-2 transition-all duration-200 hover:bg-primary hover:text-white bg-white border-2 border-primary rounded-full text-primary"
+            >
+              Incorprate Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <div
+      class="lg:hidden h-20 sm:px-4 px-0 flex items-center justify-start border-b border-gray-100"
+    >
+      <div class="flex space-x-0 sm:space-x-6">
+        <a
+          href="#"
+          class="text-gray-800 flex items-center hover:bg-primary hover:text-white rounded-md px-3 py-2 text-xs xl:text-base font-normal"
+          aria-current="page"
+          >How It Works</a
+        >
+        <div id="btn_mob_1" class="wow">
+          <div class="relative flex justify-center">
+            <button
+              type="button"
+              class="inline-flex items-center gap-x-1 leading-6 text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-xs xl:text-base font-normal"
+              aria-expanded="false"
+            >
+              <span>Services</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              id="floating_mob_1"
+              class="absolute left-1/2 hidden z-10 mt-16 flex w-screen max-w-max -translate-x-[20%] px-4"
+            >
+              <div
+                class="max-w-5xl w-[70vw] xl:w-screen flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                  >
+                    <div
+                      class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <a href="#" class="font-semibold text-gray-900">
+                        Help center
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Get all of your questions answered
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                  >
+                    <div
+                      class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <a href="#" class="font-semibold text-gray-900">
+                        Guides
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Learn how to maximize our platform
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                  >
+                    <div
+                      class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <a href="#" class="font-semibold text-gray-900">
+                        Events
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        See meet-ups and other events near you
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-8">
+                  <div class="flex justify-between">
+                    <h3 class="text-sm font-semibold leading-6 text-gray-500">
+                      Recent posts
+                    </h3>
+                    <a
+                      href="#"
+                      class="text-sm font-semibold leading-6 text-indigo-600"
+                      >See all <span aria-hidden="true">&rarr;</span></a
+                    >
+                  </div>
+                  <ul role="list" class="mt-6 space-y-6">
+                    <li class="relative">
+                      <time
+                        datetime="2023-03-05"
+                        class="block text-xs leading-6 text-gray-600"
+                        >Mar 5, 2023</time
+                      >
+                      <a
+                        href="#"
+                        class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                      >
+                        Boost your conversion rate
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </li>
+                    <li class="relative">
+                      <time
+                        datetime="2023-02-25"
+                        class="block text-xs leading-6 text-gray-600"
+                        >Feb 25, 2023</time
+                      >
+                      <a
+                        href="#"
+                        class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                      >
+                        How to use search engine optimization to drive traffic
+                        to your site
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </li>
+                    <li class="relative">
+                      <time
+                        datetime="2023-02-21"
+                        class="block text-xs leading-6 text-gray-600"
+                        >Feb 21, 2023</time
+                      >
+                      <a
+                        href="#"
+                        class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                      >
+                        Improve your customer experience
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="btn_mob_2" class="relative flex justify-center">
+          <button
+            type="button"
+            class="inline-flex items-center gap-x-1 leading-6 text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-xs xl:text-base font-normal"
+            aria-expanded="false"
+          >
+            <span>Resources Center</span>
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="floating_mob_2"
+            class="absolute hidden left-1/2 z-10 mt-16 flex w-screen max-w-max lg:-translate-x-[40%] px-4"
+          >
+            <div
+              class="max-w-5xl w-[70vw] xl:w-screen flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+            >
+              <div class="p-4">
+                <div
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div
+                    class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">
+                      Help center
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Get all of your questions answered
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div
+                    class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">
+                      Guides
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Learn how to maximize our platform
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div
+                    class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">
+                      Events
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      See meet-ups and other events near you
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 p-8">
+                <div class="flex justify-between">
+                  <h3 class="text-sm font-semibold leading-6 text-gray-500">
+                    Recent posts
+                  </h3>
+                  <a
+                    href="#"
+                    class="text-sm font-semibold leading-6 text-indigo-600"
+                    >See all <span aria-hidden="true">&rarr;</span></a
+                  >
+                </div>
+                <ul role="list" class="mt-6 space-y-6">
+                  <li class="relative">
+                    <time
+                      datetime="2023-03-05"
+                      class="block text-xs leading-6 text-gray-600"
+                      >Mar 5, 2023</time
+                    >
+                    <a
+                      href="#"
+                      class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                    >
+                      Boost your conversion rate
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <time
+                      datetime="2023-02-25"
+                      class="block text-xs leading-6 text-gray-600"
+                      >Feb 25, 2023</time
+                    >
+                    <a
+                      href="#"
+                      class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                    >
+                      How to use search engine optimization to drive traffic to
+                      your site
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <time
+                      datetime="2023-02-21"
+                      class="block text-xs leading-6 text-gray-600"
+                      >Feb 21, 2023</time
+                    >
+                    <a
+                      href="#"
+                      class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                    >
+                      Improve your customer experience
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="btn_mob_3" class="relative hidden sm:flex justify-center">
+          <button
+            type="button"
+            class="inline-flex items-center gap-x-1 leading-6 text-gray-800 hover:bg-primary hover:text-white rounded-md px-3 py-2 text-sm xl:text-base font-normal"
+            aria-expanded="false"
+          >
+            <span>About Us</span>
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="floating_mob_3"
+            class="absolute hidden left-1/2 z-10 mt-16 flex w-screen max-w-max -translate-x-[40%] px-4"
+          >
+            <div
+              class="max-w-md w-[70vw] xl:w-screen flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+            >
+              <div class="p-4">
+                <div
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div
+                    class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">
+                      Help center
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Get all of your questions answered
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div
+                    class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">
+                      Guides
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Learn how to maximize our platform
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div
+                    class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">
+                      Events
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      See meet-ups and other events near you
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 p-8">
+                <div class="flex justify-between">
+                  <h3 class="text-sm font-semibold leading-6 text-gray-500">
+                    Recent posts
+                  </h3>
+                  <a
+                    href="#"
+                    class="text-sm font-semibold leading-6 text-indigo-600"
+                    >See all <span aria-hidden="true">&rarr;</span></a
+                  >
+                </div>
+                <ul role="list" class="mt-6 space-y-6">
+                  <li class="relative">
+                    <time
+                      datetime="2023-03-05"
+                      class="block text-xs leading-6 text-gray-600"
+                      >Mar 5, 2023</time
+                    >
+                    <a
+                      href="#"
+                      class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                    >
+                      Boost your conversion rate
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <time
+                      datetime="2023-02-25"
+                      class="block text-xs leading-6 text-gray-600"
+                      >Feb 25, 2023</time
+                    >
+                    <a
+                      href="#"
+                      class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                    >
+                      How to use search engine optimization to drive traffic to
+                      your site
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <time
+                      datetime="2023-02-21"
+                      class="block text-xs leading-6 text-gray-600"
+                      >Feb 21, 2023</time
+                    >
+                    <a
+                      href="#"
+                      class="block truncate text-sm font-semibold leading-6 text-gray-900"
+                    >
+                      Improve your customer experience
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const floating_1 = document.getElementById("floating_1");
+      const floating_2 = document.getElementById("floating_2");
+      const floating_3 = document.getElementById("floating_3");
+
+      const floating_mob_1 = document.getElementById("floating_mob_1");
+      const floating_mob_2 = document.getElementById("floating_mob_2");
+      const floating_mob_3 = document.getElementById("floating_mob_3");
+
+      const btn_1 = document.getElementById("btn_1");
+      const btn_2 = document.getElementById("btn_2");
+      const btn_3 = document.getElementById("btn_3");
+
+      const btn_mob_1 = document.getElementById("btn_mob_1");
+      const btn_mob_2 = document.getElementById("btn_mob_2");
+      const btn_mob_3 = document.getElementById("btn_mob_3");
+
+      btn_1.addEventListener("click", () => {
+        floating_1.classList.toggle("hidden");
+        floating_2.classList.add("hidden");
+        floating_3.classList.add("hidden");
+      });
+
+      btn_2.addEventListener("click", () => {
+        floating_2.classList.toggle("hidden");
+        floating_3.classList.add("hidden");
+        floating_1.classList.add("hidden");
+      });
+
+      btn_3.addEventListener("click", () => {
+        floating_3.classList.toggle("hidden");
+        floating_1.classList.add("hidden");
+        floating_2.classList.add("hidden");
+      });
+
+      btn_mob_1.addEventListener("click", () => {
+        floating_mob_1.classList.toggle("hidden");
+        floating_mob_2.classList.add("hidden");
+        floating_mob_3.classList.add("hidden");
+      });
+
+      btn_mob_2.addEventListener("click", () => {
+        floating_mob_2.classList.toggle("hidden");
+        floating_mob_3.classList.add("hidden");
+        floating_mob_1.classList.add("hidden");
+      });
+
+      btn_mob_3.addEventListener("click", () => {
+        floating_mob_3.classList.toggle("hidden");
+        floating_mob_1.classList.add("hidden");
+        floating_mob_2.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
