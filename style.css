@@ -987,6 +987,10 @@ select{
   float: right;
 }
 
+.-m-2{
+  margin: -0.5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1017,6 +1021,11 @@ select{
   margin-bottom: 1.5rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-ml-24{
   margin-left: -6rem;
 }
@@ -1033,12 +1042,12 @@ select{
   margin-bottom: 1.5rem;
 }
 
-.ml-12{
-  margin-left: 3rem;
-}
-
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.ml-8{
+  margin-left: 2rem;
 }
 
 .ml-auto{
@@ -1085,12 +1094,8 @@ select{
   margin-top: 2rem;
 }
 
-.ml-0{
-  margin-left: 0px;
-}
-
-.ml-8{
-  margin-left: 2rem;
+.mt-24{
+  margin-top: 6rem;
 }
 
 .block{
@@ -1175,10 +1180,6 @@ select{
 
 .h-full{
   height: 100%;
-}
-
-.h-3{
-  height: 0.75rem;
 }
 
 .max-h-12{
@@ -1281,8 +1282,8 @@ select{
   width: 100vw;
 }
 
-.w-3{
-  width: 0.75rem;
+.w-\[76rem\]{
+  width: 76rem;
 }
 
 .max-w-2xl{
@@ -1332,6 +1333,10 @@ select{
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .flex-1{
@@ -1492,10 +1497,6 @@ select{
   row-gap: 4rem;
 }
 
-.gap-y-8{
-  row-gap: 2rem;
-}
-
 .space-x-0 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -1536,6 +1537,18 @@ select{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -1708,6 +1721,25 @@ select{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-indigo-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-600\/10{
+  background-color: rgb(79 70 229 / 0.1);
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-green-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1865,6 +1897,16 @@ select{
   padding-bottom: 2rem;
 }
 
+.px-3\.5{
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .pb-32{
   padding-bottom: 8rem;
 }
@@ -1899,6 +1941,18 @@ select{
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pl-16{
+  padding-left: 4rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-left{
@@ -2117,6 +2171,12 @@ select{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .ring-1{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2133,6 +2193,10 @@ select{
 
 .ring-gray-900\/5{
   --tw-ring-color: rgb(17 24 39 / 0.05);
+}
+
+.ring-indigo-600\/10{
+  --tw-ring-color: rgb(79 70 229 / 0.1);
 }
 
 .blur-3xl{
@@ -2161,6 +2225,11 @@ select{
 .\[mask-image\:radial-gradient\(32rem_32rem_at_center\2c white\2c transparent\)\]{
   -webkit-mask-image: radial-gradient(32rem 32rem at center,white,transparent);
           mask-image: radial-gradient(32rem 32rem at center,white,transparent);
+}
+
+.\[mask-image\:radial-gradient\(100\%_100\%_at_top_right\2c white\2c transparent\)\]{
+  -webkit-mask-image: radial-gradient(100% 100% at top right,white,transparent);
+          mask-image: radial-gradient(100% 100% at top right,white,transparent);
 }
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
@@ -2211,6 +2280,11 @@ select{
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-indigo-500:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover{
@@ -2347,6 +2421,10 @@ select{
   outline-color: #1D9BF0;
 }
 
+.focus-visible\:outline-indigo-600:focus-visible{
+  outline-color: #4f46e5;
+}
+
 .group:hover .group-hover\:bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2420,6 +2498,14 @@ select{
     margin-top: 5rem;
   }
 
+  .sm\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .sm\:mt-32{
+    margin-top: 8rem;
+  }
+
   .sm\:inline-block{
     display: inline-block;
   }
@@ -2452,6 +2538,10 @@ select{
     max-width: 36rem;
   }
 
+  .sm\:max-w-5xl{
+    max-width: 64rem;
+  }
+
   .sm\:columns-2{
     -moz-columns: 2;
          columns: 2;
@@ -2479,10 +2569,6 @@ select{
 
   .sm\:justify-center{
     justify-content: center;
-  }
-
-  .sm\:justify-between{
-    justify-content: space-between;
   }
 
   .sm\:gap-8{
@@ -2529,6 +2615,16 @@ select{
     padding-bottom: 8rem;
   }
 
+  .sm\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .sm\:pl-20{
     padding-left: 5rem;
   }
@@ -2553,6 +2649,10 @@ select{
     padding-top: 20rem;
   }
 
+  .sm\:pb-32{
+    padding-bottom: 8rem;
+  }
+
   .sm\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2570,6 +2670,11 @@ select{
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .sm\:leading-6{
@@ -2610,10 +2715,6 @@ select{
     justify-content: flex-start;
   }
 
-  .md\:justify-center{
-    justify-content: center;
-  }
-
   .md\:justify-between{
     justify-content: space-between;
   }
@@ -2636,6 +2737,10 @@ select{
     grid-column-end: 1;
   }
 
+  .lg\:-m-4{
+    margin: -1rem;
+  }
+
   .lg\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -2655,6 +2760,18 @@ select{
 
   .lg\:mt-24{
     margin-top: 6rem;
+  }
+
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .lg\:mr-0{
+    margin-right: 0px;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
   }
 
   .lg\:block{
@@ -2705,8 +2822,20 @@ select{
     max-width: none;
   }
 
+  .lg\:max-w-4xl{
+    max-width: 56rem;
+  }
+
+  .lg\:max-w-xl{
+    max-width: 36rem;
+  }
+
   .lg\:flex-none{
     flex: none;
+  }
+
+  .lg\:flex-shrink-0{
+    flex-shrink: 0;
   }
 
   .lg\:shrink-0{
@@ -2731,20 +2860,16 @@ select{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .lg\:flex-row{
-    flex-direction: row;
-  }
-
   .lg\:items-center{
     align-items: center;
   }
 
-  .lg\:justify-start{
-    justify-content: flex-start;
-  }
-
   .lg\:gap-y-8{
     row-gap: 2rem;
+  }
+
+  .lg\:gap-y-16{
+    row-gap: 4rem;
   }
 
   .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2755,6 +2880,14 @@ select{
 
   .lg\:self-end{
     align-self: flex-end;
+  }
+
+  .lg\:rounded-2xl{
+    border-radius: 1rem;
+  }
+
+  .lg\:p-4{
+    padding: 1rem;
   }
 
   .lg\:px-12{
@@ -2782,6 +2915,16 @@ select{
     padding-bottom: 2rem;
   }
 
+  .lg\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:pb-8{
     padding-bottom: 2rem;
   }
@@ -2798,6 +2941,14 @@ select{
     padding-top: 9rem;
   }
 
+  .lg\:pt-8{
+    padding-top: 2rem;
+  }
+
+  .lg\:text-center{
+    text-align: center;
+  }
+
   .lg\:shadow-sm{
     --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -2812,6 +2963,10 @@ select{
 
   .xl\:ml-48{
     margin-left: 12rem;
+  }
+
+  .xl\:ml-32{
+    margin-left: 8rem;
   }
 
   .xl\:flex{
