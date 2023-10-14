@@ -1026,6 +1026,11 @@ select{
   margin-bottom: 2rem;
 }
 
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .-ml-24{
   margin-left: -6rem;
 }
@@ -1096,6 +1101,10 @@ select{
 
 .mt-24{
   margin-top: 6rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .block{
@@ -1180,6 +1189,10 @@ select{
 
 .h-full{
   height: 100%;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .max-h-12{
@@ -1286,6 +1299,22 @@ select{
   width: 76rem;
 }
 
+.w-12{
+  width: 3rem;
+}
+
+.w-\[25rem\]{
+  width: 25rem;
+}
+
+.w-\[20rem\]{
+  width: 20rem;
+}
+
+.w-\[30rem\]{
+  width: 30rem;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -1355,7 +1384,15 @@ select{
   flex-shrink: 0;
 }
 
+.shrink-0{
+  flex-shrink: 0;
+}
+
 .flex-grow{
+  flex-grow: 1;
+}
+
+.grow{
   flex-grow: 1;
 }
 
@@ -1495,6 +1532,16 @@ select{
 
 .gap-y-16{
   row-gap: 4rem;
+}
+
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-20{
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]){
@@ -1740,6 +1787,11 @@ select{
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
+.bg-red-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1905,6 +1957,21 @@ select{
 .py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pb-32{
@@ -2174,6 +2241,12 @@ select{
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2677,6 +2750,11 @@ select{
     line-height: 1;
   }
 
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:leading-6{
     line-height: 1.5rem;
   }
@@ -2858,6 +2936,10 @@ select{
 
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:items-center{
