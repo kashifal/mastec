@@ -73,11 +73,3 @@ btn_mob_3.addEventListener("click", () => {
   floating_mob_1.classList.add("hidden");
   floating_mob_2.classList.add("hidden");
 });
-
-
-$(document).ready(function(){
-  $('.your-class').slick({
-    setting-name: setting-value
-  });
-});
-		
