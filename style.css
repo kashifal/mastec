@@ -2062,6 +2062,11 @@ select{
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
+.bg-green-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2554,6 +2559,11 @@ select{
   color: rgb(84 22 144 / var(--tw-text-opacity));
 }
 
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2687,6 +2697,11 @@ select{
 .placeholder\:text-gray-400::placeholder{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.even\:bg-gray-50:nth-child(even){
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .hover\:scale-105:hover{
@@ -3121,6 +3136,10 @@ select{
 
   .sm\:pt-80{
     padding-top: 20rem;
+  }
+
+  .sm\:pl-3{
+    padding-left: 0.75rem;
   }
 
   .sm\:text-2xl{
