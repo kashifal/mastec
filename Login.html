@@ -10,21 +10,21 @@
     <div id="root" class="bg-gray-100">
       <div class="h-full bg-gray-100">
         <div class="h-full">
-          <div class="flex min-h-screen flex-1">
+          <div class="flex flex-1 min-h-screen">
             <div
-              class="flex flex-1 flex-col w-2/4 justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24"
+              class="flex flex-col justify-center flex-1 w-2/4 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24"
             >
               <div class="Toastify"></div>
-              <div class="mx-auto w-full max-w-sm lg:w-96">
+              <div class="w-full max-w-sm mx-auto lg:w-96">
                 <a href="/login"
                   ><img
                     src="./assets/logo.svg"
                     alt="Logo"
-                    class="h-6 inline-flex w-auto"
+                    class="inline-flex w-auto h-6"
                 /></a>
                 <div>
                   <h2
-                    class="mt-8 tracking-normal text-gray-700 poppins heading text-4xl font-bold leading-9"
+                    class="mt-8 text-4xl font-bold leading-9 tracking-normal text-gray-700 poppins heading"
                   >
                     Sign in 👋
                   </h2>
@@ -32,7 +32,7 @@
                 <div class="mt-8">
                   <div>
                     <form class="space-y-3">
-                      <p class="text-sm my-2 font-light text-red-600"></p>
+                      <p class="my-2 text-sm font-light text-red-600"></p>
                       <div>
                         <label
                           for="email"
@@ -42,11 +42,11 @@
                         <div class="mt-2">
                           <input
                             id="email"
-                            name="email"
+                            me="email"
                             type="email"
                             placeholder="john@yahoo.com"
                             required=""
-                            class="block px-3 w-full rounded-md border-0 py-2 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-0"
+                            class="block w-full px-3 py-2 border-0 rounded-md ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-0"
                             style="
                               background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=');
                               background-repeat: no-repeat;
@@ -83,13 +83,13 @@
                         aria-hidden="true"
                       ></div>
                     </div>
-                    <div class="mt-6 grid grid-cols-1 gap-4">
+                    <div class="grid grid-cols-1 gap-4 mt-6">
                       <a
                         href="#"
                         class="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-1.5 text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D9BF0]"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-4 w-4"
+                          class="w-4 h-4"
                           viewBox="0 0 48 48"
                         >
                           <path
@@ -118,9 +118,9 @@
               </div>
             </div>
             <div
-              class="relative lg:flex items-center justify-center bg-primary flex-col gap-12 w-2/4 flex-1 hidden"
+              class="relative flex-col items-center justify-center flex-1 hidden w-2/4 gap-12 lg:flex bg-primary"
             >
-              <div class="heading top-20 left-0 w-full"></div>
+              <div class="left-0 w-full heading top-20"></div>
               <img
                 class="w-[700px] h-auto"
                 src="./assets/Pc_signup.png"
